@@ -1,0 +1,126 @@
+Script started on 2023-02-09 10:16:44+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ unzzi[K[Kip Descargas/ssh.zip
+[?2004lArchive:  Descargas/ssh.zip
+replace .ssh/id_rsa? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
+  inflating: .ssh/id_rsa             
+replace .ssh/id_rsa.pub? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
+  inflating: .ssh/id_rsa.pub         
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ git clone ^[[200~git@github.com:TeresaBallesterNavarro/decker.git~
+[?2004lClonando en 'decker.git~'...
+\033[200~git@github.com: Permission denied (publickey).
+fatal: No se pudo leer del repositorio remoto.
+
+Por favor asegúrate de que tengas los permisos de acceso correctos
+y que el repositorio exista.
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ git clone [7mgit@github.com:Teres[27m[7ma[27m[7mBallesterNavarro/decker.git[27m[A]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[Cgit@github.com:TeresaBallesterNavarro/decker.git
+[?2004lClonando en 'decker'...
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Recibiendo objetos:  33% (1/3)Recibiendo objetos:  66% (2/3)Recibiendo objetos: 100% (3/3)Recibiendo objetos: 100% (3/3), listo.
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ gedit 01.py
+[?2004l^C
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ cd decker/
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git add[K[K[K[K[K[Kedirt[K[Kt 01.py
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ gedit 01.py
+[?2004l^C
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git add 01.py
+[?2004lfatal: ruta especificada '01.py' no concordó con ningún archivo
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ ls
+[?2004lREADME.md
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git[K[K[Kgedit
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ gedit 01.py
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ ls
+[?2004lREADME.md
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ gedeit[K[K[K[Kdit 01.py
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ cd ..
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ rm 01.py
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ cd de ke[K[K[Kcker
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ cd decker[1Prm 01.py[3Pcd ..gedit 01.pyls[Kgedit 01.py
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git add 01.py
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git commit -m 2[K"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004l01.py  README.md
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ lsgit add 01.py[2Pedit[C[C[C[C[C[C[2@it add[C[C[C[C[C[C[1P 01.py[1P 01.py[1P 01.pyc 01.pyo 01.pym 01.pym 01.pyi 01.pyt 01.py[C 01.py- 01.pym 01.py[C 01.py[C[C[C[C[C[C[K[K[K[K[K"primer  archibo[K[Kvo"
+[?2004l[main 25f5993] primer archivo
+ 1 file changed, 35 insertions(+)
+ create mode 100644 01.py
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git push
+[?2004lEnumerando objetos: 4, listo.
+Contando objetos:  25% (1/4)Contando objetos:  50% (2/4)Contando objetos:  75% (3/4)Contando objetos: 100% (4/4)Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos:  33% (1/3)Comprimiendo objetos:  66% (2/3)Comprimiendo objetos: 100% (3/3)Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  33% (1/3)Escribiendo objetos:  66% (2/3)Escribiendo objetos: 100% (3/3)Escribiendo objetos: 100% (3/3), 664 bytes | 664.00 KiB/s, listo.
+Total 3 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To github.com:TeresaBallesterNavarro/decker.git
+   b364b2f..25f5993  main -> main
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ bit[K[K[Kgedit 01.py ½[K&
+[?2004l[1] 4057
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ gedit 01.py &
+[?2004l[2] 4076
+[1]   Hecho                   gedit 01.py
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ gedit 02.py
+[?2004l[2]+  Hecho                   gedit 01.py
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git add 02.py
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git commit -m "Segundo  programa"
+[?2004l[main a10b346] Segundo programa
+ 1 file changed, 45 insertions(+)
+ create mode 100644 02.py
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ gut[K[Kit push
+[?2004lTo github.com:TeresaBallesterNavarro/decker.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: falló el push de algunas referencias a 'github.com:TeresaBallesterNavarro/decker.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que[m
+[33mayuda: no existe localmente. Esto es causado usualmente por otro repositorio[m
+[33mayuda: realizando push a la misma ref. Quizás quieras integrar primero los cambios[m
+[33mayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.[m
+[33mayuda: Mira 'Notes about fast-forwards' en 'git push --help' para detalles.[m
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ [K]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ [K]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git push
+[?2004lTo github.com:TeresaBallesterNavarro/decker.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: falló el push de algunas referencias a 'github.com:TeresaBallesterNavarro/decker.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que[m
+[33mayuda: no existe localmente. Esto es causado usualmente por otro repositorio[m
+[33mayuda: realizando push a la misma ref. Quizás quieras integrar primero los cambios[m
+[33mayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.[m
+[33mayuda: Mira 'Notes about fast-forwards' en 'git push --help' para detalles.[m
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git pull
+[?2004lremote: Enumerating objects: 14, done.[K
+remote: Counting objects:   7% (1/14)[Kremote: Counting objects:  14% (2/14)[Kremote: Counting objects:  21% (3/14)[Kremote: Counting objects:  28% (4/14)[Kremote: Counting objects:  35% (5/14)[Kremote: Counting objects:  42% (6/14)[Kremote: Counting objects:  50% (7/14)[Kremote: Counting objects:  57% (8/14)[Kremote: Counting objects:  64% (9/14)[Kremote: Counting objects:  71% (10/14)[Kremote: Counting objects:  78% (11/14)[Kremote: Counting objects:  85% (12/14)[Kremote: Counting objects:  92% (13/14)[Kremote: Counting objects: 100% (14/14)[Kremote: Counting objects: 100% (14/14), done.[K
+remote: Compressing objects:  11% (1/9)[Kremote: Compressing objects:  22% (2/9)[Kremote: Compressing objects:  33% (3/9)[Kremote: Compressing objects:  44% (4/9)[Kremote: Compressing objects:  55% (5/9)[Kremote: Compressing objects:  66% (6/9)[Kremote: Compressing objects:  77% (7/9)[Kremote: Compressing objects:  88% (8/9)[Kremote: Compressing objects: 100% (9/9)[Kremote: Compressing objects: 100% (9/9), done.[K
+remote: Total 12 (delta 3), reused 12 (delta 3), pack-reused 0[K
+Desempaquetando objetos:   8% (1/12)Desempaquetando objetos:  16% (2/12)Desempaquetando objetos:  25% (3/12)Desempaquetando objetos:  33% (4/12)Desempaquetando objetos:  41% (5/12)Desempaquetando objetos:  50% (6/12)Desempaquetando objetos:  58% (7/12)Desempaquetando objetos:  66% (8/12)Desempaquetando objetos:  75% (9/12)Desempaquetando objetos:  83% (10/12)Desempaquetando objetos:  91% (11/12)Desempaquetando objetos: 100% (12/12)Desempaquetando objetos: 100% (12/12), 1.78 KiB | 608.00 KiB/s, listo.
+Desde github.com:TeresaBallesterNavarro/decker
+   25f5993..7b1e0e5  main       -> origin/main
+[33mayuda: Hacer un pull sin especificar cómo reconciliar las ramas es poco[m
+[33mayuda: recomendable. Puedes eliminar este mensaje usando uno de los[m
+[33mayuda: siguientes comandos antes de tu siguiente pull:[m
+[33mayuda: [m
+[33mayuda:   git config pull.rebase false  # hacer merge (estrategia por defecto)[m
+[33mayuda:   git config pull.rebase true   # aplicar rebase[m
+[33mayuda:   git config pull.ff only       # aplicar solo fast-forward[m
+[33mayuda: [m
+[33mayuda: Puedes reemplazar "git config" con "git config --global" para aplicar[m
+[33mayuda: la preferencia en todos los repositorios. Puedes también pasar --rebase,[m
+[33mayuda: --no-rebase, o --ff-only en el comando para sobrescribir la configuración[m
+[33mayuda: por defecto en cada invocación.[m
+fatal: Necesita especificar cómo reconciliar las ramas divergentes.
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ [7mgit config pull.rebase false[27mgit config pull.rebase false
+[?2004l[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git pull
+[?2004layuda: Esperando que tu editor cierre el archivo ... [?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;95H(B[0;7m[ Leyendo... ](B[m[53;93H(B[0;7m[ 6 líneas leídas ](B[m[H(B[0;7m  GNU nano 6.2                                                                         /home/david/decker/.git/MERGE_MSG                                                                                   [1;202H(B[m[54d(B[0;7m^G(B[m Ayuda[54;17H(B[0;7m^O(B[m Guardar[33G(B[0;7m^W(B[m Buscar[49G(B[0;7m^K(B[m Cortar[65G(B[0;7m^T(B[m Ejecutar     (B[0;7m^C(B[m Ubicación    (B[0;7mM-U(B[m Deshacer    (B[0;7mM-A(B[m Poner marca (B[0;7mM-](B[m A llave     (B[0;7mM-Q(B[m Anterior    (B[0;7m^B(B[m Atrás[54;177H(B[0;7m^◂(B[m Palabr ant[55d(B[0;7m^X(B[m Salir[55;17H(B[0;7m^R(B[m Leer fich.   (B[0;7m^\(B[m Reemplazar   (B[0;7m^U(B[m Pegar[55;65H(B[0;7m^J(B[m Justificar   (B[0;7m^/(B[m Ir a línea   (B[0;7mM-E(B[m Rehacer     (B[0;7mM-6(B[m Copiar[129G(B[0;7m^Q(B[m Buscar atrás (B[0;7mM-W(B[m Siguiente   (B[0;7m^F(B[m Adelante     (B[0;7m^▸(B[m Palabra Siguiente[2dMerge branch 'main' of github.com:TeresaBallesterNavarro/decker[3d[36m# Por favor ingresa un mensaje de commit que explique por qué es necesaria esta fusión,[4d# especialmente si esto fusiona un upstream actualizado en una rama de tópico.[5d#[6d# Líneas comenzando con '#' serán ignoradas, y un mensaje vacío aborta[7d# el commit.[2d[39m(B[m[?12l[?25h[?25l[53d[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004l[KMerge made by the 'ort' strategy.
+ 03.py | 47 [32m+++++++++++++++++++++++++++++++++++++++++++++++[m
+ 04.py | 51 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 2 files changed, 98 insertions(+)
+ create mode 100644 03.py
+ create mode 100644 04.py
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git push
+[?2004lEnumerando objetos: 8, listo.
+Contando objetos:  12% (1/8)Contando objetos:  25% (2/8)Contando objetos:  37% (3/8)Contando objetos:  50% (4/8)Contando objetos:  62% (5/8)Contando objetos:  75% (6/8)Contando objetos:  87% (7/8)Contando objetos: 100% (8/8)Contando objetos: 100% (8/8), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos:  20% (1/5)Comprimiendo objetos:  40% (2/5)Comprimiendo objetos:  60% (3/5)Comprimiendo objetos:  80% (4/5)Comprimiendo objetos: 100% (5/5)Comprimiendo objetos: 100% (5/5), listo.
+Escribiendo objetos:  20% (1/5)Escribiendo objetos:  40% (2/5)Escribiendo objetos:  60% (3/5)Escribiendo objetos:  80% (4/5)Escribiendo objetos: 100% (5/5)Escribiendo objetos: 100% (5/5), 967 bytes | 967.00 KiB/s, listo.
+Total 5 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To github.com:TeresaBallesterNavarro/decker.git
+   7b1e0e5..dd2f2ff  main -> main
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/decker[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/decker[00m$ git pushllconfig pull.rebase falsepull[Kshcommit -m "Segundo programa"add 02.py[K
