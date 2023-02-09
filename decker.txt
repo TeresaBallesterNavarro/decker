@@ -1,0 +1,1066 @@
+Script started on 2023-02-09 09:17:12+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="101" LINES="55"]
+[?2004h]0;alumno@aula444: ~[01;32malumno@aula444[00m:[01;34m~[00m$ gh[K[Kunzip Descargas/teresbal.pub.zip
+[?2004lArchive:  Descargas/teresbal.pub.zip
+replace .ssh/id_rsa? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
+  inflating: .ssh/id_rsa             
+replace .ssh/id_rsa.pub? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
+  inflating: .ssh/id_rsa.pub         
+[?2004h]0;alumno@aula444: ~[01;32malumno@aula444[00m:[01;34m~[00m$ gh repo clone TeresaBalles[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit clone TeresaBallester[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgit@github.com:TeresaBallesterNavarro/decker.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit@github.com:TeresaBallesterNavarro/decker.git
+[?2004lClonando en 'decker'...
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Recibiendo objetos:  33% (1/3)Recibiendo objetos:  66% (2/3)Recibiendo objetos: 100% (3/3)Recibiendo objetos: 100% (3/3), listo.
+[?2004h]0;alumno@aula444: ~[01;32malumno@aula444[00m:[01;34m~[00m$ gedit 02[K[K03.py
+[?2004l^C
+[?2004h]0;alumno@aula444: ~[01;32malumno@aula444[00m:[01;34m~[00m$ git add 03.py
+[?2004lfatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+[?2004h]0;alumno@aula444: ~[01;32malumno@aula444[00m:[01;34m~[00m$ git add README.md
+[?2004lfatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+[?2004h]0;alumno@aula444: ~[01;32malumno@aula444[00m:[01;34m~[00m$ cd decker/
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 03.py
+[?2004lfatal: ruta especificada '03.py' no concordó con ningún archivo
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit 03.py
+[?2004l^C
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ get[K[Kit add 03.py
+[?2004lfatal: ruta especificada '03.py' no concordó con ningún archivo
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit 03.py
+[?2004lgit add 03.py
+^C
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add Rea[K[KEADME.md
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git commit -m 'README'
+[?2004lIdentidad del autor desconocido
+
+*** Por favor cuéntame quién eres.
+
+Ejecuta
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Tu Nombre"
+
+para configurar la identidad por defecto de tu cuenta.
+Omite --global para configurar tu identidad solo en este repositorio.
+
+fatal: no es posible auto-detectar la dirección de correo (se obtuvo 'alumno@aula444.(none)')
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git config^C[?2004l[?2004h[?2004l
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ [7mfrom multiprocessing import Process[27m
+[7mfrom multiprocessing import current_process[27m
+[7mfrom multiprocessing import Value, Array[27m
+[7mN = 8[27m
+[7mdef is_anybody_inside(critical, tid):[27m
+[7mfound = False[27m
+[7mi = 0[27m
+[7mwhile i<len(critical) and not found:[27m
+[7mfound = tid!=i and critical[i]==1[27m
+[7mi += 1[27m
+[7mreturn found[27m
+[7mdef task(common, tid, critical):[27m
+[7ma = 0[27m
+[7mfor i in range(100):[27m
+[7mprint(f’{tid}−{i}: Non−critical Section’)[27m
+[7ma += 1[27m
+[7mprint(f’{tid}−{i}: End of non−critical Section’)[27m
+[7mcritical[tid] = 1[27m
+[7mwhile is_anybody_inside(critical, tid):[27m
+[7mcritical[tid] = 0[27m
+[7mprint(f’{tid}−{i}: Giving up’)[27m
+[7mcritical[tid] = 1[27m
+[7mprint(f’{tid}−{i}: Critical section’)[27m
+[7mv = common.value + 1[27m
+[7mprint(f’{tid}−{i}: Inside critical section’)[27m
+[7mcommon.value = v[27m
+[7mprint(f’{tid}−{i}: End of critical section’)[27m
+[7mcritical[tid] = 0[27m
+[7mdef main():[27m
+[7mlp = [][27m
+[7mcommon = Value(’i’, 0)[27m
+[7mcritical = Array(’i’, [0]*N)[27m
+[7mfor tid in range(N):[27m
+[7mlp.append(Process(target=task, args=(common, tid, critical)))[27m
+[7mprint (f"Valor inicial del contador {common.value}")[27m
+[7mfor p in lp:[27m
+[7mp.start()[27m
+[7mfor p in lp:[27m
+[7mp.join()[27m
+[7mprint (f"Valor final del contador {common.value}")[27m
+[7mprint ("fin")[27m
+[7mif __name__ == "__main__":[27m
+[7mmain()[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ from multiprocessing import Process
+from multiprocessing import current_process
+from multiprocessing import Value, Array
+N = 8
+def is_anybody_inside(critical, tid):
+found = False
+i = 0
+while i<len(critical) and not found:
+found = tid!=i and critical[i]==1
+i += 1
+return found
+def task(common, tid, critical):
+a = 0
+for i in range(100):
+print(f’{tid}−{i}: Non−critical Section’)
+a += 1
+print(f’{tid}−{i}: End of non−critical Section’)
+critical[tid] = 1
+while is_anybody_inside(critical, tid):
+critical[tid] = 0
+print(f’{tid}−{i}: Giving up’)
+critical[tid] = 1
+print(f’{tid}−{i}: Critical section’)
+v = common.value + 1
+print(f’{tid}−{i}: Inside critical section’)
+common.value = v
+print(f’{tid}−{i}: End of critical section’)
+critical[tid] = 0
+def main():
+lp = []
+common = Value(’i’, 0)
+critical = Array(’i’, [0]*N)
+for tid in range(N):
+lp.append(Process(target=task, args=(common, tid, critical)))
+print (f"Valor inicial del contador {common.value}")
+for p in lp:
+p.start()
+for p in lp:
+p.join()
+print (f"Valor final del contador {common.value}")
+print ("fin")
+if __name__ == "__main__":
+[1Pmain([K[K[K^C[?2004l[?2004h[?2004l
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ [7mgit config --global user.email "you@example.com"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global user.email "you@example.com"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1P"[1Pm"[1Pm"[1Pm"[1Pm"[1P"[1P"[1P"[1P"t"e"r"e"s"b"a"l"@"u"c"m"."e"s"[C
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 'README.md[1PREADME.md[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git commit -m 'Re[Keadme'
+[?2004lEn la rama main
+Tu rama está actualizada con 'origin/main'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ G[Kgedit 03-[K.py
+[?2004l^C
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 03.py
+[?2004lfatal: ruta especificada '03.py' no concordó con ningún archivo
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 'o0~[K[K[K03.py'
+[?2004lfatal: ruta especificada '03.py' no concordó con ningún archivo
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add '03.py'[C[C[K[1P03.py~03.py/03.py[1P03.py[1P03.py[1P03.py 03.py[C[C[C[C[C
+[?2004lfatal: ruta especificada '03.py' no concordó con ningún archivo
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls[K[K-ls
+[?2004lOrden «-ls» no encontrada. Quizá quiso decir:
+  la orden «jls» del paquete deb «sleuthkit (4.11.1+dfsg-1)»
+  la orden «ols» del paquete deb «speech-tools (1:2.5.0-12)»
+  la orden «fls» del paquete deb «sleuthkit (4.11.1+dfsg-1)»
+  la orden «ls» del paquete deb «coreutils (8.32-4.1ubuntu1)»
+  la orden «hls» del paquete deb «hfsutils (3.2.6-15build2)»
+  la orden «als» del paquete deb «atool (0.39.0-11)»
+  la orden «ils» del paquete deb «sleuthkit (4.11.1+dfsg-1)»
+  la orden «i-ls» del paquete deb «integrit (4.1-1.1)»
+Pruebe con: apt install <nombre del paquete deb>
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ -al
+[?2004lOrden «-al» no encontrada. Quizá quiso decir:
+  la orden «cal» del paquete deb «ncal (12.1.7+nmu3ubuntu2)»
+  la orden «al» del paquete deb «mono-devel (6.8.0.105+dfsg-3.2)»
+  la orden «fal» del paquete deb «dnet-progs (2.65build2)»
+  la orden «pal» del paquete deb «pal (0.4.3-8.1build4)»
+Pruebe con: apt install <nombre del paquete deb>
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git emacs
+[?2004lgit: 'emacs' no es un comando de git. Mira 'git --help'.
+
+El comando más similar es
+	repack
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ emacs
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ emacs 03.py
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  README.md
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ e[Kgedsit[K[K[Kit 04.py
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  04.py  README.md
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ lsgedit 04.py &
+[?2004l[1] 8419
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ rm 04.py 
+[?2004l[1]+  Hecho                   gedit 04.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ rm 04.py gedit 04.py &
+[?2004l[1] 8455
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  README.md
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  04.py  README.md
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 04.py 
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit [K[K[K[K[K[Kgedit 04.py &
+[?2004l[2] 8500
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  04.py  README.md
+[1]-  Hecho                   gedit 04.py
+[2]+  Hecho                   gedit 04.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit 04.py &
+[?2004l[1] 8523
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ de[K[Kgedit 03.py &
+[?2004l[2] 8561
+[1]   Hecho                   gedit 04.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  04.py  README.md
+[2]+  Hecho                   gedit 03.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ python3 03.py
+[?2004l  File "/home/alumno/decker/03.py", line 17
+    print(f’{tid}−{i}: Non−critical Section’)
+           ^
+SyntaxError: invalid character '’' (U+2019)
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedity~[K[K[K[K[K[K[Kgedit 03.py &
+[?2004l[1] 14929
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit 04.py &
+[?2004l[2] 37001
+[1]   Hecho                   gedit 03.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  04.py  README.md
+[2]+  Hecho                   gedit 04.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit 03.py &
+[?2004l[1] 37047
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  04.py  README.md
+[1]+  Hecho                   gedit 03.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 03.py
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git commit -m ""o"3"[1P"[1P"0"3"[1P"[1P"T"e"r"e"c"e"r" "a"r"c"h"[1P"[1P"[1P"[1P"p"t"[1P"r"o"g"r"a"m"a"[C[1P[1P[1P[1@c[1@e[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[main 025eea6] Tercer programa
+ 2 files changed, 51 insertions(+)
+ create mode 100644 03.py
+ create mode 100644 04.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 04.py
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git commit -m ""C"u"a"r"t"o" "p"r"o"g"r"a"m"a"[C
+[?2004l[main bad8790] Cuarto programa
+ 1 file changed, 47 insertions(+)
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git push
+[?2004lTo github.com:TeresaBallesterNavarro/decker.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: falló el push de algunas referencias a 'github.com:TeresaBallesterNavarro/decker.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que[m
+[33mayuda: no existe localmente. Esto es causado usualmente por otro repositorio[m
+[33mayuda: realizando push a la misma ref. Quizás quieras integrar primero los cambios[m
+[33mayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.[m
+[33mayuda: Mira 'Notes about fast-forwards' en 'git push --help' para detalles.[m
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git pullk[K
+[?2004lremote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+Desempaquetando objetos:  33% (1/3)Desempaquetando objetos:  66% (2/3)Desempaquetando objetos: 100% (3/3)Desempaquetando objetos: 100% (3/3), 644 bytes | 644.00 KiB/s, listo.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0[K
+Desde github.com:TeresaBallesterNavarro/decker
+   b364b2f..25f5993  main       -> origin/main
+[33mayuda: Hacer un pull sin especificar cómo reconciliar las ramas es poco[m
+[33mayuda: recomendable. Puedes eliminar este mensaje usando uno de los[m
+[33mayuda: siguientes comandos antes de tu siguiente pull:[m
+[33mayuda: [m
+[33mayuda:   git config pull.rebase false  # hacer merge (estrategia por defecto)[m
+[33mayuda:   git config pull.rebase true   # aplicar rebase[m
+[33mayuda:   git config pull.ff only       # aplicar solo fast-forward[m
+[33mayuda: [m
+[33mayuda: Puedes reemplazar "git config" con "git config --global" para aplicar[m
+[33mayuda: la preferencia en todos los repositorios. Puedes también pasar --rebase,[m
+[33mayuda: --no-rebase, o --ff-only en el comando para sobrescribir la configuración[m
+[33mayuda: por defecto en cada invocación.[m
+fatal: Necesita especificar cómo reconciliar las ramas divergentes.
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git confi[K[K[K[K[K[K[K[K[K[7mgit config --global user.email "you@example.com"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global user.email "you@example.com"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"t"e"r"e"s"b"a"l"@"u"c"m"."e"s"[C
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git push
+[?2004lTo github.com:TeresaBallesterNavarro/decker.git
+ [31m! [rejected]       [m main -> main (non-fast-forward)
+[31merror: falló el push de algunas referencias a 'github.com:TeresaBallesterNavarro/decker.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque la punta de tu rama actual está[m
+[33mayuda: detrás de su contraparte remota. Integra los cambios remotos (es decir[m
+[33mayuda: 'git pull ...') antes de hacer push de nuevo.[m
+[33mayuda: Mira 'Note about fast-forwards' en 'git push --help' para más detalles.[m
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git pull
+[?2004l[33mayuda: Hacer un pull sin especificar cómo reconciliar las ramas es poco[m
+[33mayuda: recomendable. Puedes eliminar este mensaje usando uno de los[m
+[33mayuda: siguientes comandos antes de tu siguiente pull:[m
+[33mayuda: [m
+[33mayuda:   git config pull.rebase false  # hacer merge (estrategia por defecto)[m
+[33mayuda:   git config pull.rebase true   # aplicar rebase[m
+[33mayuda:   git config pull.ff only       # aplicar solo fast-forward[m
+[33mayuda: [m
+[33mayuda: Puedes reemplazar "git config" con "git config --global" para aplicar[m
+[33mayuda: la preferencia en todos los repositorios. Puedes también pasar --rebase,[m
+[33mayuda: --no-rebase, o --ff-only en el comando para sobrescribir la configuración[m
+[33mayuda: por defecto en cada invocación.[m
+fatal: Necesita especificar cómo reconciliar las ramas divergentes.
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l03.py  04.py  README.md
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ [7mgit config pull.rebase false[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config pull.rebase false
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git config pull.rebase false[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kgit pull
+[?2004layuda: Esperando que tu editor cierre el archivo ... [?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;95H(B[0;7m[ Leyendo... ](B[m[53;93H(B[0;7m[ 6 líneas leídas ](B[m[H(B[0;7m  GNU nano 6.2                                                                         /home/alumno/decker/.git/MERGE_MSG                                                                                  [1;202H(B[m[54d(B[0;7m^G(B[m Ayuda[54;17H(B[0;7m^O(B[m Guardar[33G(B[0;7m^W(B[m Buscar[49G(B[0;7m^K(B[m Cortar[65G(B[0;7m^T(B[m Ejecutar     (B[0;7m^C(B[m Ubicación    (B[0;7mM-U(B[m Deshacer    (B[0;7mM-A(B[m Poner marca (B[0;7mM-](B[m A llave     (B[0;7mM-Q(B[m Anterior    (B[0;7m^B(B[m Atrás[54;177H(B[0;7m^◂(B[m Palabr ant[55d(B[0;7m^X(B[m Salir[55;17H(B[0;7m^R(B[m Leer fich.   (B[0;7m^\(B[m Reemplazar   (B[0;7m^U(B[m Pegar[55;65H(B[0;7m^J(B[m Justificar   (B[0;7m^/(B[m Ir a línea   (B[0;7mM-E(B[m Rehacer     (B[0;7mM-6(B[m Copiar[129G(B[0;7m^Q(B[m Buscar atrás (B[0;7mM-W(B[m Siguiente   (B[0;7m^F(B[m Adelante     (B[0;7m^▸(B[m Palabra Siguiente[2dMerge branch 'main' of github.com:TeresaBallesterNavarro/decker[3d[36m# Por favor ingresa un mensaje de commit que explique por qué es necesaria esta fusión,[4d# especialmente si esto fusiona un upstream actualizado en una rama de tópico.[5d#[6d# Líneas comenzando con '#' serán ignoradas, y un mensaje vacío aborta[7d# el commit.[2d[39m(B[m[?12l[?25h[?25l[53d[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004l[KMerge made by the 'ort' strategy.
+ 01.py | 35 [32m+++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 35 insertions(+)
+ create mode 100644 01.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git push
+[?2004lEnumerando objetos: 11, listo.
+Contando objetos:   9% (1/11)Contando objetos:  18% (2/11)Contando objetos:  27% (3/11)Contando objetos:  36% (4/11)Contando objetos:  45% (5/11)Contando objetos:  54% (6/11)Contando objetos:  63% (7/11)Contando objetos:  72% (8/11)Contando objetos:  81% (9/11)Contando objetos:  90% (10/11)Contando objetos: 100% (11/11)Contando objetos: 100% (11/11), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos:  11% (1/9)Comprimiendo objetos:  22% (2/9)Comprimiendo objetos:  33% (3/9)Comprimiendo objetos:  44% (4/9)Comprimiendo objetos:  55% (5/9)Comprimiendo objetos:  66% (6/9)Comprimiendo objetos:  77% (7/9)Comprimiendo objetos:  88% (8/9)Comprimiendo objetos: 100% (9/9)Comprimiendo objetos: 100% (9/9), listo.
+Escribiendo objetos:  11% (1/9)Escribiendo objetos:  22% (2/9)Escribiendo objetos:  33% (3/9)Escribiendo objetos:  44% (4/9)Escribiendo objetos:  66% (6/9)Escribiendo objetos:  77% (7/9)Escribiendo objetos:  88% (8/9)Escribiendo objetos: 100% (9/9)Escribiendo objetos: 100% (9/9), 1.51 KiB | 771.00 KiB/s, listo.
+Total 9 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), done.[K
+To github.com:TeresaBallesterNavarro/decker.git
+   25f5993..9dcd5bd  main -> main
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ python3 03.py
+[?2004l  File "/home/alumno/decker/03.py", line 40
+    p.start()
+    ^
+IndentationError: expected an indented block after 'for' statement on line 39
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gita[K[K[Kedit 03.py &
+[?2004l[1] 37225
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l01.py  03.py  04.py  README.md
+[1]+  Hecho                   gedit 03.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 03.py
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gitr[K commit -m "Terte[K[Kcer r[Kprto[K[Kograma"
+[?2004l[main 7b1e0e5] Tercer programa
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git commit -m "Tercer programa"[18Padd 03.pyls[Kgedit 03.py &python3 03.py[5Pgit pushllshll
+[?2004lYa está actualizado.
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git pullcommit -m "Tercer programa"[18Padd 03.pyls[Kgedit 03.py &python3 03.py[5Pgit push
+[?2004lEnumerando objetos: 5, listo.
+Contando objetos:  20% (1/5)Contando objetos:  40% (2/5)Contando objetos:  60% (3/5)Contando objetos:  80% (4/5)Contando objetos: 100% (5/5)Contando objetos: 100% (5/5), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos:  33% (1/3)Comprimiendo objetos:  66% (2/3)Comprimiendo objetos: 100% (3/3)Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  33% (1/3)Escribiendo objetos:  66% (2/3)Escribiendo objetos: 100% (3/3)Escribiendo objetos: 100% (3/3), 354 bytes | 354.00 KiB/s, listo.
+Total 3 (delta 1), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:TeresaBallesterNavarro/decker.git
+   9dcd5bd..7b1e0e5  main -> main
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l01.py  03.py  04.py  README.md
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ python3 03.py
+[?2004l  File "/home/alumno/decker/03.py", line 47
+    main()
+    ^
+IndentationError: expected an indented block after 'if' statement on line 46
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit 03.py &
+[?2004l[1] 37342
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ g[Kgedit 03.py &python3 03.pygedit 03.py &python3 03.pyls[Kgit pushllcommit -m "Tercer programa"[18Padd 03.pyls[Kgit add 03.py
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 03.pyedit 03.py &python3 03.pyls[Kgit pushllcommit -m "Tercer programa"
+[?2004l[main be9a37f] Tercer programa
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git commit -m "Tercer programa"[18Padd 03.pyedit 03.py &python3 03.pyls[Kgit pushllsh
+[?2004lTo github.com:TeresaBallesterNavarro/decker.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: falló el push de algunas referencias a 'github.com:TeresaBallesterNavarro/decker.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que[m
+[33mayuda: no existe localmente. Esto es causado usualmente por otro repositorio[m
+[33mayuda: realizando push a la misma ref. Quizás quieras integrar primero los cambios[m
+[33mayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.[m
+[33mayuda: Mira 'Notes about fast-forwards' en 'git push --help' para detalles.[m
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git pull
+[?2004lremote: Enumerating objects: 13, done.[K
+remote: Counting objects:   8% (1/12)[Kremote: Counting objects:  16% (2/12)[Kremote: Counting objects:  25% (3/12)[Kremote: Counting objects:  33% (4/12)[Kremote: Counting objects:  41% (5/12)[Kremote: Counting objects:  50% (6/12)[Kremote: Counting objects:  58% (7/12)[Kremote: Counting objects:  66% (8/12)[Kremote: Counting objects:  75% (9/12)[Kremote: Counting objects:  83% (10/12)[Kremote: Counting objects:  91% (11/12)[Kremote: Counting objects: 100% (12/12)[Kremote: Counting objects: 100% (12/12), done.[K
+remote: Compressing objects:  25% (1/4)[Kremote: Compressing objects:  50% (2/4)[Kremote: Compressing objects:  75% (3/4)[Kremote: Compressing objects: 100% (4/4)[Kremote: Compressing objects: 100% (4/4), done.[K
+Desempaquetando objetos:  12% (1/8)Desempaquetando objetos:  25% (2/8)Desempaquetando objetos:  37% (3/8)Desempaquetando objetos:  50% (4/8)Desempaquetando objetos:  62% (5/8)Desempaquetando objetos:  75% (6/8)Desempaquetando objetos:  87% (7/8)Desempaquetando objetos: 100% (8/8)Desempaquetando objetos: 100% (8/8), 1.19 KiB | 611.00 KiB/s, listo.
+remote: Total 8 (delta 4), reused 8 (delta 4), pack-reused 0[K
+Desde github.com:TeresaBallesterNavarro/decker
+   7b1e0e5..922ad28  main       -> origin/main
+ayuda: Esperando que tu editor cierre el archivo ... [?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;95H(B[0;7m[ Leyendo... ](B[m[53;93H(B[0;7m[ 6 líneas leídas ](B[m[H(B[0;7m  GNU nano 6.2                                                                         /home/alumno/decker/.git/MERGE_MSG                                                                                  [1;202H(B[m[54d(B[0;7m^G(B[m Ayuda[54;17H(B[0;7m^O(B[m Guardar[33G(B[0;7m^W(B[m Buscar[49G(B[0;7m^K(B[m Cortar[65G(B[0;7m^T(B[m Ejecutar     (B[0;7m^C(B[m Ubicación    (B[0;7mM-U(B[m Deshacer    (B[0;7mM-A(B[m Poner marca (B[0;7mM-](B[m A llave     (B[0;7mM-Q(B[m Anterior    (B[0;7m^B(B[m Atrás[54;177H(B[0;7m^◂(B[m Palabr ant[55d(B[0;7m^X(B[m Salir[55;17H(B[0;7m^R(B[m Leer fich.   (B[0;7m^\(B[m Reemplazar   (B[0;7m^U(B[m Pegar[55;65H(B[0;7m^J(B[m Justificar   (B[0;7m^/(B[m Ir a línea   (B[0;7mM-E(B[m Rehacer     (B[0;7mM-6(B[m Copiar[129G(B[0;7m^Q(B[m Buscar atrás (B[0;7mM-W(B[m Siguiente   (B[0;7m^F(B[m Adelante     (B[0;7m^▸(B[m Palabra Siguiente[2dMerge branch 'main' of github.com:TeresaBallesterNavarro/decker[3d[36m# Por favor ingresa un mensaje de commit que explique por qué es necesaria esta fusión,[4d# especialmente si esto fusiona un upstream actualizado en una rama de tópico.[5d#[6d# Líneas comenzando con '#' serán ignoradas, y un mensaje vacío aborta[7d# el commit.[2d[39m(B[m[?12l[?25h[?25l[53d[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004l[KMerge made by the 'ort' strategy.
+ 01.py | 14 [32m+++++++[m[31m-------[m
+ 02.py | 45 [32m+++++++++++++++++++++++++++++++++++++++++++++[m
+ 2 files changed, 52 insertions(+), 7 deletions(-)
+ create mode 100644 02.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git push
+[?2004lEnumerando objetos: 9, listo.
+Contando objetos:  12% (1/8)Contando objetos:  25% (2/8)Contando objetos:  37% (3/8)Contando objetos:  50% (4/8)Contando objetos:  62% (5/8)Contando objetos:  75% (6/8)Contando objetos:  87% (7/8)Contando objetos: 100% (8/8)Contando objetos: 100% (8/8), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos:  20% (1/5)Comprimiendo objetos:  40% (2/5)Comprimiendo objetos:  60% (3/5)Comprimiendo objetos:  80% (4/5)Comprimiendo objetos: 100% (5/5)Comprimiendo objetos: 100% (5/5), listo.
+Escribiendo objetos:  20% (1/5)Escribiendo objetos:  40% (2/5)Escribiendo objetos:  60% (3/5)Escribiendo objetos:  80% (4/5)Escribiendo objetos: 100% (5/5)Escribiendo objetos: 100% (5/5), 638 bytes | 638.00 KiB/s, listo.
+Total 5 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:TeresaBallesterNavarro/decker.git
+   922ad28..8be1138  main -> main
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ ls
+[?2004l01.py  02.py  03.py  04.py  README.md
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ python 03.py
+[?2004lOrden «python» no encontrada. Quizá quiso decir:
+  la orden «python3» del paquete deb «python3»
+  la orden «python» del paquete deb «python-is-python3»
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ python 03.pyls[Kgit pushls[Kgit pushllshcommit -m "Tercer programa"[18Padd 03.pyedit 03.py &python3 03.pyls[Kpython3 03.py
+[?2004lValor inicial del contador 0
+0−0: Non−critical Section
+0−0: End of non−critical Section
+0−0: Critical section
+0−0: Inside critical section
+0−0: End of critical section
+0−1: Non−critical Section
+0−1: End of non−critical Section
+0−1: Critical section
+0−1: Inside critical section
+0−1: End of critical section
+0−2: Non−critical Section
+0−2: End of non−critical Section
+0−2: Critical section
+0−2: Inside critical section
+0−2: End of critical section
+0−3: Non−critical Section
+0−3: End of non−critical Section
+0−3: Critical section
+0−3: Inside critical section
+0−3: End of critical section
+0−4: Non−critical Section
+0−4: End of non−critical Section
+0−4: Critical section
+0−4: Inside critical section
+0−4: End of critical section
+0−5: Non−critical Section
+0−5: End of non−critical Section
+0−5: Critical section
+0−5: Inside critical section
+0−5: End of critical section
+0−6: Non−critical Section
+0−6: End of non−critical Section
+0−6: Critical section
+0−6: Inside critical section
+0−6: End of critical section
+0−7: Non−critical Section
+0−7: End of non−critical Section
+0−7: Critical section
+0−7: Inside critical section
+0−7: End of critical section
+0−8: Non−critical Section
+0−8: End of non−critical Section
+0−8: Critical section
+0−8: Inside critical section
+0−8: End of critical section
+0−9: Non−critical Section
+0−9: End of non−critical Section
+1−0: Non−critical Section
+1−0: End of non−critical Section
+0−9: Critical section
+0−9: Inside critical section
+0−9: End of critical section
+1−0: Critical section
+1−0: Inside critical section
+1−0: End of critical section
+1−1: Non−critical Section
+1−1: End of non−critical Section
+1−1: Critical section
+1−1: Inside critical section
+1−1: End of critical section
+1−2: Non−critical Section
+1−2: End of non−critical Section
+1−2: Critical section
+1−2: Inside critical section
+1−2: End of critical section
+1−3: Non−critical Section
+1−3: End of non−critical Section
+1−3: Critical section
+1−3: Inside critical section
+1−3: End of critical section
+1−4: Non−critical Section
+1−4: End of non−critical Section
+1−4: Critical section
+1−4: Inside critical section
+1−4: End of critical section
+1−5: Non−critical Section
+1−5: End of non−critical Section
+1−5: Critical section
+1−5: Inside critical section
+1−5: End of critical section
+1−6: Non−critical Section
+1−6: End of non−critical Section
+2−0: Non−critical Section
+2−0: End of non−critical Section
+1−6: Critical section
+1−6: Inside critical section
+1−6: End of critical section
+1−7: Non−critical Section
+1−7: End of non−critical Section
+2−0: Critical section
+1−7: Giving up
+1−7: Giving up
+2−0: Inside critical section
+1−7: Giving up
+2−0: End of critical section
+2−1: Non−critical Section
+2−1: End of non−critical Section
+1−7: Critical section
+1−7: Inside critical section
+2−1: Giving up
+1−7: End of critical section
+2−1: Giving up
+1−8: Non−critical Section
+1−8: End of non−critical Section
+1−8: Giving up
+2−1: Critical section
+2−1: Inside critical section
+2−1: End of critical section
+1−8: Giving up
+2−2: Non−critical Section
+2−2: End of non−critical Section
+2−2: Giving up
+1−8: Critical section
+1−8: Inside critical section
+2−2: Giving up
+1−8: End of critical section
+2−2: Giving up
+1−9: Non−critical Section
+1−9: End of non−critical Section
+2−2: Critical section
+1−9: Giving up
+2−2: Inside critical section
+2−2: End of critical section
+2−3: Non−critical Section
+2−3: End of non−critical Section
+1−9: Critical section
+2−3: Giving up
+1−9: Inside critical section
+1−9: End of critical section
+2−3: Giving up
+2−3: Critical section
+2−3: Inside critical section
+2−3: End of critical section
+2−4: Non−critical Section
+2−4: End of non−critical Section
+2−4: Critical section
+2−4: Inside critical section
+2−4: End of critical section
+2−5: Non−critical Section
+2−5: End of non−critical Section
+2−5: Critical section
+2−5: Inside critical section
+2−5: End of critical section
+2−6: Non−critical Section
+2−6: End of non−critical Section
+2−6: Critical section
+2−6: Inside critical section
+2−6: End of critical section
+2−7: Non−critical Section
+2−7: End of non−critical Section
+2−7: Critical section
+2−7: Inside critical section
+2−7: End of critical section
+2−8: Non−critical Section
+2−8: End of non−critical Section
+2−8: Critical section
+2−8: Inside critical section
+2−8: End of critical section
+3−0: Non−critical Section
+2−9: Non−critical Section
+2−9: End of non−critical Section
+3−0: End of non−critical Section
+2−9: Critical section
+2−9: Inside critical section
+2−9: End of critical section
+3−0: Giving up
+3−0: Giving up
+3−0: Giving up
+3−0: Critical section
+3−0: Inside critical section
+3−0: End of critical section
+3−1: Non−critical Section
+3−1: End of non−critical Section
+3−1: Critical section
+3−1: Inside critical section
+3−1: End of critical section
+3−2: Non−critical Section
+3−2: End of non−critical Section
+3−2: Critical section
+3−2: Inside critical section
+3−2: End of critical section
+3−3: Non−critical Section
+3−3: End of non−critical Section
+3−3: Critical section
+3−3: Inside critical section
+3−3: End of critical section
+3−4: Non−critical Section
+3−4: End of non−critical Section
+3−4: Critical section
+3−4: Inside critical section
+3−4: End of critical section
+3−5: Non−critical Section
+3−5: End of non−critical Section
+3−5: Critical section
+3−5: Inside critical section
+3−5: End of critical section
+3−6: Non−critical Section
+3−6: End of non−critical Section
+3−6: Critical section
+3−6: Inside critical section
+3−6: End of critical section
+3−7: Non−critical Section
+3−7: End of non−critical Section
+3−7: Critical section
+3−7: Inside critical section
+3−7: End of critical section
+3−8: Non−critical Section
+3−8: End of non−critical Section
+3−8: Critical section
+3−8: Inside critical section
+3−8: End of critical section
+3−9: Non−critical Section
+3−9: End of non−critical Section
+3−9: Critical section
+3−9: Inside critical section
+3−9: End of critical section
+4−0: Non−critical Section
+4−0: End of non−critical Section
+4−0: Critical section
+4−0: Inside critical section
+4−0: End of critical section
+4−1: Non−critical Section
+4−1: End of non−critical Section
+4−1: Critical section
+4−1: Inside critical section
+4−1: End of critical section
+4−2: Non−critical Section
+4−2: End of non−critical Section
+4−2: Critical section
+4−2: Inside critical section
+4−2: End of critical section
+4−3: Non−critical Section
+4−3: End of non−critical Section
+4−3: Critical section
+5−0: Non−critical Section
+4−3: Inside critical section
+5−0: End of non−critical Section
+4−3: End of critical section
+4−4: Non−critical Section
+4−4: End of non−critical Section
+5−0: Giving up
+4−4: Critical section
+5−0: Giving up
+4−4: Inside critical section
+4−4: End of critical section
+5−0: Giving up
+4−5: Non−critical Section
+4−5: End of non−critical Section
+5−0: Critical section
+4−5: Giving up
+5−0: Inside critical section
+5−0: End of critical section
+5−1: Non−critical Section
+4−5: Giving up
+5−1: End of non−critical Section
+5−1: Giving up
+4−5: Critical section
+5−1: Giving up
+4−5: Inside critical section
+4−5: End of critical section
+5−1: Giving up
+4−6: Non−critical Section
+4−6: End of non−critical Section
+5−1: Critical section
+5−1: Inside critical section
+5−1: End of critical section
+5−2: Non−critical Section
+5−2: End of non−critical Section
+4−6: Critical section
+4−6: Inside critical section
+5−2: Giving up
+4−6: End of critical section
+4−7: Non−critical Section
+5−2: Giving up
+4−7: End of non−critical Section
+5−2: Giving up
+4−7: Critical section
+5−2: Giving up
+4−7: Inside critical section
+4−7: End of critical section
+5−2: Giving up
+4−8: Non−critical Section
+4−8: End of non−critical Section
+5−2: Critical section
+5−2: Inside critical section
+5−2: End of critical section
+5−3: Non−critical Section
+5−3: End of non−critical Section
+4−8: Critical section
+4−8: Inside critical section
+5−3: Giving up
+4−8: End of critical section
+4−9: Non−critical Section
+4−9: End of non−critical Section
+5−3: Critical section
+5−3: Inside critical section
+5−3: End of critical section
+5−4: Non−critical Section
+5−4: End of non−critical Section
+4−9: Critical section
+5−4: Giving up
+4−9: Inside critical section
+4−9: End of critical section
+5−4: Giving up
+5−4: Critical section
+5−4: Inside critical section
+5−4: End of critical section
+5−5: Non−critical Section
+5−5: End of non−critical Section
+5−5: Critical section
+5−5: Inside critical section
+5−5: End of critical section
+5−6: Non−critical Section
+5−6: End of non−critical Section
+5−6: Critical section
+5−6: Inside critical section
+5−6: End of critical section
+5−7: Non−critical Section
+5−7: End of non−critical Section
+5−7: Critical section
+5−7: Inside critical section
+5−7: End of critical section
+5−8: Non−critical Section
+5−8: End of non−critical Section
+5−8: Critical section
+5−8: Inside critical section
+5−8: End of critical section
+5−9: Non−critical Section
+5−9: End of non−critical Section
+6−0: Non−critical Section
+6−0: End of non−critical Section
+5−9: Critical section
+5−9: Inside critical section
+5−9: End of critical section
+6−0: Critical section
+6−0: Inside critical section
+6−0: End of critical section
+6−1: Non−critical Section
+6−1: End of non−critical Section
+6−1: Critical section
+6−1: Inside critical section
+6−1: End of critical section
+6−2: Non−critical Section
+6−2: End of non−critical Section
+6−2: Critical section
+6−2: Inside critical section
+6−2: End of critical section
+6−3: Non−critical Section
+6−3: End of non−critical Section
+6−3: Critical section
+6−3: Inside critical section
+6−3: End of critical section
+6−4: Non−critical Section
+6−4: End of non−critical Section
+6−4: Critical section
+6−4: Inside critical section
+6−4: End of critical section
+6−5: Non−critical Section
+6−5: End of non−critical Section
+6−5: Critical section
+6−5: Inside critical section
+6−5: End of critical section
+6−6: Non−critical Section
+6−6: End of non−critical Section
+6−6: Critical section
+6−6: Inside critical section
+6−6: End of critical section
+6−7: Non−critical Section
+6−7: End of non−critical Section
+6−7: Critical section
+6−7: Inside critical section
+6−7: End of critical section
+6−8: Non−critical Section
+6−8: End of non−critical Section
+6−8: Critical section
+6−8: Inside critical section
+6−8: End of critical section
+6−9: Non−critical Section
+6−9: End of non−critical Section
+6−9: Critical section
+6−9: Inside critical section
+6−9: End of critical section
+7−0: Non−critical Section
+7−0: End of non−critical Section
+7−0: Critical section
+7−0: Inside critical section
+7−0: End of critical section
+7−1: Non−critical Section
+7−1: End of non−critical Section
+7−1: Critical section
+7−1: Inside critical section
+7−1: End of critical section
+7−2: Non−critical Section
+7−2: End of non−critical Section
+7−2: Critical section
+7−2: Inside critical section
+7−2: End of critical section
+7−3: Non−critical Section
+7−3: End of non−critical Section
+7−3: Critical section
+7−3: Inside critical section
+7−3: End of critical section
+7−4: Non−critical Section
+7−4: End of non−critical Section
+7−4: Critical section
+7−4: Inside critical section
+7−4: End of critical section
+7−5: Non−critical Section
+7−5: End of non−critical Section
+7−5: Critical section
+7−5: Inside critical section
+7−5: End of critical section
+7−6: Non−critical Section
+7−6: End of non−critical Section
+7−6: Critical section
+7−6: Inside critical section
+7−6: End of critical section
+7−7: Non−critical Section
+7−7: End of non−critical Section
+7−7: Critical section
+7−7: Inside critical section
+7−7: End of critical section
+7−8: Non−critical Section
+7−8: End of non−critical Section
+7−8: Critical section
+7−8: Inside critical section
+7−8: End of critical section
+7−9: Non−critical Section
+7−9: End of non−critical Section
+7−9: Critical section
+7−9: Inside critical section
+7−9: End of critical section
+Valor final del contador 80
+fin
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ pythopn[K[Kn3 03.py > 03.txt
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git[K[Kedit 03.txt
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 03.txt
+[?2004l[1]+  Hecho                   gedit 03.py
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git commit -m 's[KSolucion tercer programa'[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[main cf8a127] Solucion tercer programa
+ 1 file changed, 403 insertions(+)
+ create mode 100644 03.txt
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git push
+[?2004lTo github.com:TeresaBallesterNavarro/decker.git
+ [31m! [rejected]       [m main -> main (fetch first)
+[31merror: falló el push de algunas referencias a 'github.com:TeresaBallesterNavarro/decker.git'
+[m[33mayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que[m
+[33mayuda: no existe localmente. Esto es causado usualmente por otro repositorio[m
+[33mayuda: realizando push a la misma ref. Quizás quieras integrar primero los cambios[m
+[33mayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.[m
+[33mayuda: Mira 'Notes about fast-forwards' en 'git push --help' para detalles.[m
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git pull
+[?2004lremote: Enumerating objects: 9, done.[K
+remote: Counting objects:  12% (1/8)[Kremote: Counting objects:  25% (2/8)[Kremote: Counting objects:  37% (3/8)[Kremote: Counting objects:  50% (4/8)[Kremote: Counting objects:  62% (5/8)[Kremote: Counting objects:  75% (6/8)[Kremote: Counting objects:  87% (7/8)[Kremote: Counting objects: 100% (8/8)[Kremote: Counting objects: 100% (8/8), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0[K
+Desempaquetando objetos:  20% (1/5)Desempaquetando objetos:  40% (2/5)Desempaquetando objetos:  60% (3/5)Desempaquetando objetos:  80% (4/5)Desempaquetando objetos: 100% (5/5)Desempaquetando objetos: 100% (5/5), 535 bytes | 267.00 KiB/s, listo.
+Desde github.com:TeresaBallesterNavarro/decker
+   8be1138..481c59a  main       -> origin/main
+ayuda: Esperando que tu editor cierre el archivo ... [?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;95H(B[0;7m[ Leyendo... ](B[m[53;93H(B[0;7m[ 6 líneas leídas ](B[m[H(B[0;7m  GNU nano 6.2                                                                         /home/alumno/decker/.git/MERGE_MSG                                                                                  [1;202H(B[m[54d(B[0;7m^G(B[m Ayuda[54;17H(B[0;7m^O(B[m Guardar[33G(B[0;7m^W(B[m Buscar[49G(B[0;7m^K(B[m Cortar[65G(B[0;7m^T(B[m Ejecutar     (B[0;7m^C(B[m Ubicación    (B[0;7mM-U(B[m Deshacer    (B[0;7mM-A(B[m Poner marca (B[0;7mM-](B[m A llave     (B[0;7mM-Q(B[m Anterior    (B[0;7m^B(B[m Atrás[54;177H(B[0;7m^◂(B[m Palabr ant[55d(B[0;7m^X(B[m Salir[55;17H(B[0;7m^R(B[m Leer fich.   (B[0;7m^\(B[m Reemplazar   (B[0;7m^U(B[m Pegar[55;65H(B[0;7m^J(B[m Justificar   (B[0;7m^/(B[m Ir a línea   (B[0;7mM-E(B[m Rehacer     (B[0;7mM-6(B[m Copiar[129G(B[0;7m^Q(B[m Buscar atrás (B[0;7mM-W(B[m Siguiente   (B[0;7m^F(B[m Adelante     (B[0;7m^▸(B[m Palabra Siguiente[2dMerge branch 'main' of github.com:TeresaBallesterNavarro/decker[3d[36m# Por favor ingresa un mensaje de commit que explique por qué es necesaria esta fusión,[4d# especialmente si esto fusiona un upstream actualizado en una rama de tópico.[5d#[6d# Líneas comenzando con '#' serán ignoradas, y un mensaje vacío aborta[7d# el commit.[2d[39m(B[m[?12l[?25h[?25l[53d[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004l[KMerge made by the 'ort' strategy.
+ 01.py | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git push
+[?2004lEnumerando objetos: 7, listo.
+Contando objetos:  14% (1/7)Contando objetos:  28% (2/7)Contando objetos:  42% (3/7)Contando objetos:  57% (4/7)Contando objetos:  71% (5/7)Contando objetos:  85% (6/7)Contando objetos: 100% (7/7)Contando objetos: 100% (7/7), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos:  20% (1/5)Comprimiendo objetos:  40% (2/5)Comprimiendo objetos:  60% (3/5)Comprimiendo objetos:  80% (4/5)Comprimiendo objetos: 100% (5/5)Comprimiendo objetos: 100% (5/5), listo.
+Escribiendo objetos:  20% (1/5)Escribiendo objetos:  40% (2/5)Escribiendo objetos:  60% (3/5)Escribiendo objetos:  80% (4/5)Escribiendo objetos: 100% (5/5)Escribiendo objetos: 100% (5/5), 1.63 KiB | 1.63 MiB/s, listo.
+Total 5 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To github.com:TeresaBallesterNavarro/decker.git
+   481c59a..33058be  main -> main
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ python3 04.py
+[?2004lValor inicial del contador 0
+0−0: Non−critical Section
+0−0: End of non−critical Section
+0−1: Non−critical Section
+0−1: End of non−critical Section
+0−2: Non−critical Section
+0−2: End of non−critical Section
+0−3: Non−critical Section
+0−3: End of non−critical Section
+0−4: Non−critical Section
+0−4: End of non−critical Section
+0−5: Non−critical Section
+0−5: End of non−critical Section
+0−6: Non−critical Section
+0−6: End of non−critical Section
+0−7: Non−critical Section
+0−7: End of non−critical Section
+0−8: Non−critical Section
+0−8: End of non−critical Section
+0−9: Non−critical Section
+0−9: End of non−critical Section
+0−9: Critical section
+0−9: Inside critical section
+0−9: End of critical section
+1−0: Non−critical Section
+1−0: End of non−critical Section
+1−1: Non−critical Section
+1−1: End of non−critical Section
+1−2: Non−critical Section
+1−2: End of non−critical Section
+1−3: Non−critical Section
+1−3: End of non−critical Section
+1−4: Non−critical Section
+1−4: End of non−critical Section
+1−5: Non−critical Section
+1−5: End of non−critical Section
+1−6: Non−critical Section
+1−6: End of non−critical Section
+1−7: Non−critical Section
+1−7: End of non−critical Section
+1−8: Non−critical Section
+1−8: End of non−critical Section
+1−9: Non−critical Section
+1−9: End of non−critical Section
+1−9: Critical section
+1−9: Inside critical section
+1−9: End of critical section
+2−0: Non−critical Section
+2−0: End of non−critical Section
+2−1: Non−critical Section
+2−1: End of non−critical Section
+2−2: Non−critical Section
+2−2: End of non−critical Section
+2−3: Non−critical Section
+2−3: End of non−critical Section
+2−4: Non−critical Section
+2−4: End of non−critical Section
+2−5: Non−critical Section
+2−5: End of non−critical Section
+2−6: Non−critical Section
+2−6: End of non−critical Section
+2−7: Non−critical Section
+2−7: End of non−critical Section
+2−8: Non−critical Section
+2−8: End of non−critical Section
+2−9: Non−critical Section
+2−9: End of non−critical Section
+2−9: Critical section
+2−9: Inside critical section
+2−9: End of critical section
+3−0: Non−critical Section
+3−0: End of non−critical Section
+3−1: Non−critical Section
+3−1: End of non−critical Section
+3−2: Non−critical Section
+3−2: End of non−critical Section
+3−3: Non−critical Section
+3−3: End of non−critical Section
+3−4: Non−critical Section
+3−4: End of non−critical Section
+3−5: Non−critical Section
+3−5: End of non−critical Section
+3−6: Non−critical Section
+3−6: End of non−critical Section
+3−7: Non−critical Section
+3−7: End of non−critical Section
+3−8: Non−critical Section
+3−8: End of non−critical Section
+3−9: Non−critical Section
+3−9: End of non−critical Section
+3−9: Critical section
+3−9: Inside critical section
+3−9: End of critical section
+4−0: Non−critical Section
+4−0: End of non−critical Section
+4−1: Non−critical Section
+4−1: End of non−critical Section
+4−2: Non−critical Section
+4−2: End of non−critical Section
+4−3: Non−critical Section
+4−3: End of non−critical Section
+4−4: Non−critical Section
+4−4: End of non−critical Section
+4−5: Non−critical Section
+4−5: End of non−critical Section
+4−6: Non−critical Section
+4−6: End of non−critical Section
+4−7: Non−critical Section
+4−7: End of non−critical Section
+4−8: Non−critical Section
+4−8: End of non−critical Section
+4−9: Non−critical Section
+4−9: End of non−critical Section
+4−9: Critical section
+4−9: Inside critical section
+4−9: End of critical section
+5−0: Non−critical Section
+5−0: End of non−critical Section
+5−1: Non−critical Section
+5−1: End of non−critical Section
+5−2: Non−critical Section
+5−2: End of non−critical Section
+5−3: Non−critical Section
+5−3: End of non−critical Section
+5−4: Non−critical Section
+5−4: End of non−critical Section
+5−5: Non−critical Section
+5−5: End of non−critical Section
+5−6: Non−critical Section
+5−6: End of non−critical Section
+5−7: Non−critical Section
+5−7: End of non−critical Section
+5−8: Non−critical Section
+5−8: End of non−critical Section
+5−9: Non−critical Section
+5−9: End of non−critical Section
+5−9: Critical section
+5−9: Inside critical section
+5−9: End of critical section
+6−0: Non−critical Section
+6−0: End of non−critical Section
+6−1: Non−critical Section
+6−1: End of non−critical Section
+6−2: Non−critical Section
+6−2: End of non−critical Section
+6−3: Non−critical Section
+6−3: End of non−critical Section
+6−4: Non−critical Section
+6−4: End of non−critical Section
+6−5: Non−critical Section
+6−5: End of non−critical Section
+6−6: Non−critical Section
+6−6: End of non−critical Section
+6−7: Non−critical Section
+6−7: End of non−critical Section
+6−8: Non−critical Section
+6−8: End of non−critical Section
+6−9: Non−critical Section
+6−9: End of non−critical Section
+6−9: Critical section
+6−9: Inside critical section
+6−9: End of critical section
+7−0: Non−critical Section
+7−0: End of non−critical Section
+7−1: Non−critical Section
+7−1: End of non−critical Section
+7−2: Non−critical Section
+7−2: End of non−critical Section
+7−3: Non−critical Section
+7−3: End of non−critical Section
+7−4: Non−critical Section
+7−4: End of non−critical Section
+7−5: Non−critical Section
+7−5: End of non−critical Section
+7−6: Non−critical Section
+7−6: End of non−critical Section
+7−7: Non−critical Section
+7−7: End of non−critical Section
+7−8: Non−critical Section
+7−8: End of non−critical Section
+7−9: Non−critical Section
+7−9: End of non−critical Section
+7−9: Critical section
+7−9: Inside critical section
+7−9: End of critical section
+Valor final del contador 8
+fin
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ python3 04.py > 04.txt
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ gedit 04.py[K[Ktxt
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git[K[K[Kgedit 04.txt[10@python3 04.py >[C[C[C[C[C[C[C[K[5Pgit pushllshcommit -m 'Solucion tercer programa'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd 03.txt[K[1P.txt4.txt[C[C[C[C
+[?2004l[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git add 04.txt[2Pedit[C[C[C[C[C[C[C[10@python3 04.py >[C[C[C[C[C[C[C[K[5Pgit pushllshcommit -m 'Solucion tercer programa'[C[C[C[C[C[C[C[C[1P programa'[1P programa'[1P programa'[1P programa'[1P programa'[1P programa'c programa'u programa'a programa'r programa't programa'o programa'[C programa'[1Pprograma'[C[C[C[C[C[C[C[C[C[C
+[?2004l[main e34ea01] Solucion cuarto programa
+ 1 file changed, 187 insertions(+)
+ create mode 100644 04.txt
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git pull
+[?2004lYa está actualizado.
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ git push
+[?2004lEnumerando objetos: 4, listo.
+Contando objetos:  25% (1/4)Contando objetos:  50% (2/4)Contando objetos:  75% (3/4)Contando objetos: 100% (4/4)Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos:  33% (1/3)Comprimiendo objetos:  66% (2/3)Comprimiendo objetos: 100% (3/3)Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  33% (1/3)Escribiendo objetos:  66% (2/3)Escribiendo objetos: 100% (3/3)Escribiendo objetos: 100% (3/3), 826 bytes | 826.00 KiB/s, listo.
+Total 3 (delta 1), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:TeresaBallesterNavarro/decker.git
+   33058be..e34ea01  main -> main
+[?2004h]0;alumno@aula444: ~/decker[01;32malumno@aula444[00m:[01;34m~/decker[00m$ [?2004l
+exit
+
+Script done on 2023-02-09 10:19:02+01:00 [COMMAND_EXIT_CODE="0"]
