@@ -6,16 +6,16 @@ N = 8
 def task(common, tid, turn):
 	a = 0
 	for i in range(10):
-		print(f'{tid}−{i}: Non−critical Section’)
+		print(f'{tid}−{i}: Non−critical Section')
 		a += 1
-		print(f'{tid}−{i}: End of non−critical Section’)
+		print(f'{tid}−{i}: End of non−critical Section')
 		while turn.value!=tid:
 			pass
-		print(f'{tid}−{i}: Critical section’)
+		print(f'{tid}−{i}: Critical section')
 		v = common.value + 1
-		print(f'{tid}−{i}: Inside critical section’)
+		print(f'{tid}−{i}: Inside critical section')
 		common.value = v
-		print(f'{tid}−{i}: End of critical section’)
+		print(f'{tid}−{i}: End of critical section')
 		turn.value = (tid + 1) % N
 		
 def main():
@@ -31,5 +31,6 @@ def main():
 		p.join()
 	print (f"Valor final del contador {common.value}")
 	print ("fin")
+	
 if __name__ == "__main__":
 	main()
