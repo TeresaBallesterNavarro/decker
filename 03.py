@@ -37,9 +37,9 @@ def main():
         lp.append(Process(target=task, args=(common, tid, critical)))
     print (f"Valor inicial del contador {common.value}")
     for p in lp:
-    p.start()
+        p.start()
     for p in lp:
-    p.join()
+        p.join()
     print (f"Valor final del contador {common.value}")
     print ("fin")
     
